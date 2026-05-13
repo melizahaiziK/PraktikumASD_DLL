@@ -88,4 +88,15 @@ public class DoubleLinkedList11 {
             current = current.next;
         }
     }
+    public void printReverse() {
+        if (isEmpty()) {
+            System.out.println("Linked List masih kosong");
+            return;
+        }
+        Node11 current = tail;
+        while (current != null) {
+            current.data.tampil();
+            current = current.prev;
+        }
+    }
 }
