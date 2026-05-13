@@ -56,7 +56,8 @@ public class DoubleLinkedList11 {
     public void removeFirst() {
         if (isEmpty()){
             System.out.println("Linked list kosong");
-        } else if (head == tail) {
+        }
+        if (head == tail) {
             head = tail = null;
             System.out.println("Data berhasil dihapus");
         } else {
@@ -68,7 +69,8 @@ public class DoubleLinkedList11 {
     public void removeLast () {
         if (isEmpty()){
             System.out.println("Linked list kosong");
-        } else if (head == tail) {
+        }
+        if (head == tail) {
             head = tail = null;
             System.out.println("Data berhasil dihapus");
         } else {
