@@ -57,27 +57,35 @@ public class DoubleLinkedList11 {
         if (isEmpty()){
             System.out.println("Linked list kosong");
         }
+        Mahasiswa11 deleted = head.data;
         if (head == tail) {
             head = tail = null;
-            System.out.println("Data berhasil dihapus");
         } else {
             head = head.next;
             head.prev = null;
-            System.out.println("Data berhasil dihapus");
         }
+        System.out.println("Data berhasil dihapus.");
+        System.out.println("NIM   : " + deleted.nim);
+        System.out.println("Nama  : " + deleted.nama);
+        System.out.println("Kelas : " + deleted.kelas);
+        System.out.println("IPK   : " + deleted.ipk);
     }
     public void removeLast () {
         if (isEmpty()){
             System.out.println("Linked list kosong");
         }
+        Mahasiswa11 deleted = tail.data;
         if (head == tail) {
             head = tail = null;
-            System.out.println("Data berhasil dihapus");
         } else {
             tail = tail.prev;
             tail.next = null;
-            System.out.println("Data berhasil dihapus");
         }
+        System.out.println("Data berhasil dihapus.");
+        System.out.println("NIM   : " + deleted.nim);
+        System.out.println("Nama  : " + deleted.nama);
+        System.out.println("Kelas : " + deleted.kelas);
+        System.out.println("IPK   : " + deleted.ipk);
     }
     public void print () {
         if (isEmpty()) {
